@@ -1,0 +1,131 @@
+/* 左边吸盘 */
+.mecar-title {
+  margin-top: 40px;
+}
+
+
+.me-hover span{
+  margin: 0 auto;
+  display: block;
+  font: 14px ;
+  border-right: .08em solid;
+  /* 个数*2ch */
+  width: 28ch; 
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(28,end), blink-caret .3s step-end infinite alternate;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50%{
+    border-color: transparent;
+  }
+}
+
+
+/* 虚线 */
+.content .borderbotm {
+  /* border-style: dashed; */
+  border-bottom: 1px dashed rgb(187, 185, 185);
+  height: 0px;
+  margin: 35px 0;
+}
+
+.mecar-title .me-image {
+  position: relative;
+  display: inline-block;
+}
+.me-image>img{
+  width: 100px;
+  height: 100px;
+  border: solid 3px #FCFCFE;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
+}
+.mecar-title .me-image>.status{
+    height: 20px;
+    width: 20px;
+     box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    position: absolute;
+    border: solid 3px #FCFCFE;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--mainColor);
+    overflow: hidden;
+    color: #1a3dec;
+    transition: width .2s ease-in-out, visible .2s ease-in-out;
+}
+.mecar-title .me-image:hover .status{
+  width: 100px;
+  border-radius: 20px;
+}
+.mecar-title .me-image:hover .status i {
+  width: 0%;
+  visibility: hidden;
+}
+.mecar-title .me-image:hover .status i {
+  width: 100%;
+  visibility: visible;
+}
+
+.mecar-bottm>div {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  line-height: 25px;
+}
+
+.mecar-bottm .mecarbottm-key {
+  font-weight: 500;
+}
+
+.mecar-bottm .mecarbottm-value {
+  font-weight: 500;
+  color: #747474;
+}
+.me-card .lianxi-list svg{
+  margin: 0 5px;
+ 
+}
+.me-card .lianxi-list a svg path{
+  transition: .2s ease-in-out;
+}
+.me-card .lianxi-list a:hover svg path{
+  fill: var(--mainColor);
+}
+.me-card .lianxi-list a{
+ display: inline-block;
+}
+.me-card .buttom-box .button{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+ 
+  color: var(--headerFont);
+  border-radius: 50px;
+  background: linear-gradient(-45deg, var(--mainColor) 50%, #fff 60%, var(--mainColor) 70%);
+  background-size: 600% 100%;
+  animation: shine 5s infinite;
+}
+@keyframes shine {
+  0% {
+    background-position-x: 100%;
+  }
+  50% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+
